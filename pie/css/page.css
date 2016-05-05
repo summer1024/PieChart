@@ -1,0 +1,11 @@
+.data-table{
+	vertical-align: middle;
+	margin:0 auto;
+}
+.container1,.container2{
+	padding-top: 10px;
+	display: inline-block;
+}
+.system-tab{
+	display: none;
+}

@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>数据图表</title>
+	<link rel="stylesheet" type="text/css" href="css/page.css">
+	<link rel="stylesheet" type="text/css" href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="col-sm-9">
+		<div class="my-tabs">
+			<ul class="nav nav-tabs" id="tablists">
+			   <li class="active" data-class="browser"><a href="#browser-tab" data-toggle="tab">浏览器类型占比</a></li>
+			   <li data-class="system"><a href="#system-tab" data-toggle="tab">网站系统占比</a></li>
+			</ul>
+			<div class="tab-content">
+				<form class="navbar-form tab-pane fade in active" id="browser-tab">
+					<div class="form-group">
+						<label for="">站点类型：</label>
+						<select class="form-control" id="browser-sv">
+							<option value="all">ALL</option>
+							<option value="stable">STABLE</option>
+							<option value="beta">BETA</option>
+						</select>
+					</div>
+					<div class="form-group" >
+						<label for="">系统类型：</label>
+						<select class="form-control" id="browser-st">
+							<option value="all">ALL</option>
+							<option value="android">Android</option>
+							<option value="ios">IOS</option>
+						</select>
+					</div>
+				</form>
+				<form class="navbar-form tab-pane fade" id="system-tab">
+					<div class="form-group">
+						<label for="">站点类型：</label>
+						<select class="form-control" id="system-sv">
+							<option value="all">ALL</option>
+							<option value="stable">STABLE</option>
+							<option value="beta">BETA</option>
+						</select>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="main">
+			<div id="container1" class="container1"></div>
+			<div id="container2" class="container2"></div>
+		</div>
+	</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+<script src="http://cdn.hcharts.cn/highcharts/modules/exporting.js"></script>
+<script type="text/javascript" src="js/pie.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/page1.js"></script>
+</body>
+</html>
